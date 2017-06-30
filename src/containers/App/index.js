@@ -1,6 +1,7 @@
 import React from 'react'
 
-import Calendar from './../../components/Calendar/index.js'
+import CartContainer from './../CartContainer'
+// import Calendar from './../../components/Calendar/index.js'
 
 
 class App extends React.PureComponent {
@@ -8,7 +9,9 @@ class App extends React.PureComponent {
 		return (
 			<div className="row">
 
-				<Calendar
+			<CartContainer />
+
+				{/*<Calendar
 					view={'week'}
 					// currentDate={'1 5 2018'}
 					events={[
@@ -23,7 +26,7 @@ class App extends React.PureComponent {
 						{ id: '24ll4', start: '30.05.2017 12:00', duration: '1', title: 'win dev-challenge)', icon: '🥇' },
 						{ id: '3sd3z', start: '1.06.2017 16:30', duration: '4', title: 'drink with cowockers', icon: '🍾' },
 					]}
-				/>
+				/>*/}
 			</div>    
 		)
 	}
